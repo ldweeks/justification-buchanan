@@ -21,7 +21,6 @@ biblio-style: apalike
 link-citations: yes
 github-repo: ldweeks/justification-buchanan
 description: "An Outline of its History in the Church and of its Exposition from Scripture"
-cover-image: ""
 ---
 
 # Preface {-}
