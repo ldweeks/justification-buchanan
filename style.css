@@ -1,0 +1,340 @@
+@import url("https://use.typekit.net/uix0fgg.css");
+
+html {
+	font-size: 70%;
+}
+
+body {
+	font-family: calluna-sans, sans-serif;
+}
+
+.book.font-family-0 {
+	font-family: calluna, minion-3, serif;
+	font-variant-ligatures: common-ligatures;
+  	-moz-font-feature-settings: "liga", "clig";
+  	-webkit-font-feature-settings: "liga", "clig";
+  	font-feature-settings: "liga", "clig";
+}
+
+.book.font-family-1 {
+	font-family: calluna-sans, minion-3, sans-serif;
+	font-variant-ligatures: common-ligatures;
+  	-moz-font-feature-settings: "liga", "clig";
+  	-webkit-font-feature-settings: "liga", "clig";
+  	font-feature-settings: "liga", "clig";
+}
+
+/*LOGO IMAGES FOR COLOR THEMES
+------------------------------------------*/
+
+.book .book-summary .summary li a img {
+	background-image: url("images/whitelogo.png");
+	background-size: contain;
+}
+
+.book.color-theme-1 .summary li a img {
+	background-image: url("images/sepialogo.png");
+	background-size: contain;
+}
+
+.book.color-theme-2 .summary li a img {
+	background-image: url("images/nightlogo.png");
+	background-size: contain;
+}
+
+/*WHITE*/
+
+.book .book-body {
+	
+}
+
+/*if you change normal color theme colors above, then set alternate themes below*/
+
+/*SEPIA*/
+
+.book.color-theme-1 .book-body {
+	/*background:*/
+	/*color:*/
+}
+
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal hr {
+	background-color: #afa790;
+}
+
+/*NIGHT*/
+
+.book.color-theme-2 .book-body {
+/*	background:*/
+/*	color:*/
+}
+
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h3, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h4, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h5, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h6 {
+	color: inherit;
+}
+
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h1, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2 {
+	border-color: #3f5061;
+}
+
+/*set header and TOC to calluna sans*/
+.book .book-header h1 {
+	font-family: calluna, serif;
+	font-weight: 300;
+	font-style: normal;
+	border: none;
+	padding-bottom: 0;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	letter-spacing: .1em;
+}
+
+.book .book-header, .book .book-summary {
+	font-family: calluna-sans, sans-serif;
+}
+
+.book .book-summary {
+	font-size: 16px;
+	line-height: 1em;
+}
+
+
+.book .book-summary ul.summary li.chapter ul li.chapter ul li.chapter {
+	font-style: italic;
+}
+
+/*HYPHENS*/
+.book .book-body .page-wrapper .page-inner section.normal p {
+	/*set paragraphs to no space between and indented first lines
+	margin-top: 0em;
+	margin-bottom: 0em;*/
+	orphans: 2;
+	widows: 2;
+	-webkit-hyphens: auto;
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-chars: 6 3 3;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-last: always;
+    -webkit-hyphenate-limit-zone: 8%;
+    -moz-hyphens: auto;
+    -moz-hyphenate-limit-chars: 6 3 3;
+    -moz-hyphenate-limit-lines: 2;
+    -moz-hyphenate-limit-last: always;
+    -moz-hyphenate-limit-zone: 8%;
+    -ms-hyphens: auto;
+    -ms-hyphenate-limit-chars: 6 3 3;
+    -ms-hyphenate-limit-lines: 2;
+    -ms-hyphenate-limit-last: always;
+    -ms-hyphenate-limit-zone: 8%;
+    hyphens: auto;
+    hyphenate-limit-chars: 6 3 3;
+    hyphenate-limit-lines: 2;
+    hyphenate-limit-last: always;
+    hyphenate-limit-zone: 8%;
+}
+
+/*p + p, h3 + p {
+  text-indent: 1.2em;
+}*/
+
+
+li.chapter b {
+	font-style: normal;
+}
+
+.book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
+	color: #1aa9ab;
+	/*font-weight: 600;*/
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal a {
+	color: #1aa9ab;
+}
+
+.section p::first-letter {
+        font-variant-numeric: lining-nums;
+        -moz-font-feature-settings: "lnum";
+        -webkit-font-feature-settings: "lnum";
+        font-feature-settings: "lnum";
+}
+
+h1 + p::first-line, h2 + p::first-line {
+	/*all small caps workaround*/
+	text-transform: lowercase;
+	font-variant: small-caps;
+	letter-spacing:.05em;
+	/* actual opentype all small caps code
+	font-variant-caps: all-small-caps;
+	-moz-font-feature-settings: "smcp";
+	-webkit-font-feature-settings: "smcp";
+	font-feature-settings: "smcp";*/
+}
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+h1, h2 {
+	text-wrap: balanced;
+}
+
+h1 {
+	font-family: calluna, serif;
+	border-bottom: 2px solid #1aa9ab;
+	line-height: 1em;
+	padding-bottom: .5em;
+	font-weight: 400;
+	/*all small caps*/
+	text-transform: lowercase;
+	font-variant: small-caps;
+	letter-spacing:.1em;
+	/*opentype asc*/
+	/*font-variant-caps: all-small-caps;
+	-moz-font-feature-settings: "smcp";
+	-webkit-font-feature-settings: "smcp";
+	font-feature-settings: "smcp";*/
+}
+
+h1 > .header-section-number {
+	display: block;
+	font-size: .67em;
+	padding-right: 0em;
+}
+
+h2 {
+	font-weight: 700;
+	line-height: 1.5em;
+	letter-spacing: .6px;
+	border-left: solid 2px #1aa9ab;
+	padding-left: .5em;
+}
+
+/*sepia mode h2 rule*/
+.book-color-theme-1 h2, .book-color-theme-2 h2 {
+	border-color: inherit;
+}
+
+/*night mode h2 rule*/
+.book-color-theme-2 h2 {
+	border-color: #3f5061;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h2 {
+	font-size: 1em;
+}
+
+h2 > .header-section-number {
+	display: block;
+	font-weight: 400;
+	padding-right: 0em;
+	margin-top: 2em;
+	letter-spacing: .2px;
+	/*all small caps
+  	text-transform: lowercase;
+  	font-variant: small-caps;
+	letter-spacing:.05em;*/
+  	/*opentype asc
+    font-variant-caps: all-small-caps;
+    -moz-font-feature-settings: "smcp";
+    -webkit-font-feature-settings: "smcp";
+    font-feature-settings: "smcp";*/
+}
+
+h2 > .header-section-number::before {
+	content: "Section ";
+}
+
+h3 {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h3 {
+	font-size: 1em;
+	/*margin-bottom: 0;*/
+}
+
+h3 > .header-section-number {
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Rule separating subheads; issue: also puts rule directly between h2 and h3—could probably be solved by proper use of descendant selectors...
+.book .book-body .page-wrapper .page-inner section.normal h3::before {
+  content: "—";
+    color: #3f5061;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+    transform: scale(4,1);
+    margin-bottom:1em;
+}
+*/
+
+/*FOOTNOTES
+---------------------------*/
+
+.book .book-body .page-wrapper .page-inner section.normal .footnotes ol, .book .book-body .page-wrapper .page-inner section.normal .footnotes ul {
+    padding: 0 0 0 0em;
+    margin:0 0 .85em 1.5em;
+    text-indent: -1.5em;
+}
+
+ /* Restart footnote numbers for each section. Following trail of solution to request asked here: https://community.rstudio.com/t/restart-footnote-numbering-in-each-chaptering/75628/4
+*/
+
+  /* don't show the wrong footnote calls */
+  .footnote-ref sup,
+  .footnoteRef sup {
+    display: none;
+  }
+
+  /* use a counter for footnote calls */
+  .page-inner {
+    counter-reset: fn-call;
+  }
+
+  .footnote-ref,
+  .footnoteRef {
+    counter-increment: fn-call;
+  }
+
+  /* generate new footnote calls */
+  .footnote-ref::after,
+  .footnoteRef::after {
+    content: counter(fn-call);
+    position: relative;
+    top: -.5em;
+    font-size: 85%;
+    line-height: 0;
+    vertical-align: baseline;
+  }
+
+  /* use a counter for footnotes numbering */
+  .footnotes ol {
+    list-style: none;
+    counter-reset: fn-number;
+  }
+
+  .footnotes li {
+    counter-increment: fn-number;
+  }
+
+  .footnotes p::before {
+ 	content: counter(fn-number) '. ';
+	width: 1.5em;
+	float: left;
+  }
+  
+/* end Restart footnote numbers for each section. */

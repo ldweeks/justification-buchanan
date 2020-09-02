@@ -1,0 +1,40 @@
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    var currentLocation = window.location.href;    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {
+      action: "https://formspree.io/xgendgzo",
+      theme: "classic",
+      buttonImg: "<i class='fas fa-exclamation' style='font-size:24px'/>",
+      title: "Report a problem!",
+      description: "Please report any typos in the book or problems with the page.",
+      fields: [{
+        name: "url",
+		type: "hidden", 
+		label: null,
+		value: currentLocation
+	  },
+	  {       
+        name: "name",
+        type: "text",
+        label: "Your Name",
+        required: true
+      },
+      {
+        name: "email",
+        type: "email",
+        label: "Your Email",
+        required: true
+      },
+      {
+        name: "message",
+        type: "textarea",
+        label: "Text with problem",
+        value: "(If reporting a typo, please copy the whole sentence with the typo and paste it here, and tell us what you think the corrected text should be.)"
+      },
+      {
+        type: "submit"
+      }],
+    });
+  </script>
